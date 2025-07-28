@@ -131,21 +131,26 @@
 <body>
     <div class="page-logo">
         <h1>लक्ष्यारम्भ</h1>
+        <!-- <img src="{{url_for('static',filename='images/logo01.png')}}" alt="csitan-logo" style="width: 150px; height: auto; margin-bottom: 20px;"> -->
     </div>
     <div class="form-container">
         <h2>Attendance Form</h2>
-        <form id="attendanceForm" method="post">
+        <form id="attendanceForm" method="post" action="/submit">
             <div class="form-group">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your full name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="ram@gmail.com" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="semester">Semester:</label>
+                <input type="number" id="semester" name="semester" placeholder="Which semester are you currently in?" min="1" max="8" required>
             </div>
             <button type="submit">Submit</button>
         </form>
