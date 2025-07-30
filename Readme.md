@@ -50,12 +50,15 @@ Local_Attendance_System/
     ```text 
     python app.py
     ```
+5. Click on the URL provided by Flask in Terminal
+
+    Example: 192.168.10.1:8000
 
 ## For Admin
 To generate the QR code, You will need to know the ip address of your hosting computer. To know the IP:
 - For Windows/MacOS in CMD/bash:
     ```text
-    ifconfig
+    ipconfig
     ```
     example: Look for inet 192.168.1.x
 
